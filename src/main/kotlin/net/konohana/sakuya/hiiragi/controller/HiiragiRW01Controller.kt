@@ -18,7 +18,7 @@ fun Route.hiiragiRW01Controller() {
                 val id = HiiragiRW01Service.create(
                     request.routeId,
                     request.staCode,
-                    request.staCode
+                    request.staName
                 )
                 call.respond(mapOf("id" to id))
             }
